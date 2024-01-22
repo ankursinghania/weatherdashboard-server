@@ -1,0 +1,11 @@
+{% extends "/html/base.html" %}
+
+{% block content %}
+    <form action="{{ url_for('return_page')}}" method="post">
+        <p>Enter ZipCode     <input type="text" name="zipcode" id="zipcode"></p>
+        <p>Enter Country Code<input type="text" name="country_code" id="country_code"></p>
+        <input type="submit" name="submit" id="submit" value="submit">
+    </form>
+</body>
+</html>
+{% endblock %}

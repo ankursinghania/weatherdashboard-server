@@ -1,0 +1,14 @@
+{% extends "/html/base.html" %}
+
+{% block content %}
+{% if zipcode > 10000  %}
+This is a blog for {{ zipcode }}
+{% else %}
+This is an invalid zipcode.
+{% endif %}
+
+{% for post in posts %}
+<p>{{ post.title}}</p>
+<p>{{ post.author}}</p>
+{% endfor %}
+{% endblock %}
